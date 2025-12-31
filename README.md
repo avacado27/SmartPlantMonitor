@@ -1,25 +1,23 @@
-🌱 Smart Plant Monitor
-An Arduino-based project that monitors plant soil moisture, light, and temperature, displaying real-time readings on an I2C LCD and automatically watering plants when needed.
+# 🌱 Smart Plant Monitor
+An Arduino-based plant monitoring system that tracks soil moisture, temperature, and light levels, with an automatic water pump for dry soil.  
 
-🚀 Features
-✅ Measure and display soil moisture, light levels, and temperature
-💧 Automatically water plants when soil is dry
-📺 Alternate LCD display between temperature and sensor readings
-⚡ Non-blocking timing using millis()
+## 🚀 Features
+✅ Measure soil moisture and display as DRY, MED, or WET  
+🌡️ Monitor temperature in Celsius and Fahrenheit  
+💡 Track ambient light levels as LOW, MED, or HIGH  
+💧 Automatic water pump activates when soil is dry  
+🖥️ Display readings on a 16x2 I2C LCD  
 
-🛠️ Tech Stack
-Arduino Uno
-I2C LCD 16x2
-Soil Moisture Sensor, Light Sensor, NTC Thermistor
-DC Water Pump
-Arduino IDE (C++)
+## 🛠️ Tech Stack
+- Arduino UNO (ATmega328P)  
+- Arduino IDE  
+- C++ (Arduino language)  
+- LiquidCrystal_I2C library (I2C LCD control)  
+- Sensors: Soil moisture, Light sensor, NTC Thermistor  
+- DC water pump  
 
-🧰 How to Run
-
-Connect the sensors and pump to the Arduino according to the code.
-
-Open SmartPlantMonitor.ino in Arduino IDE.
-
-Upload the sketch to your Arduino Uno.
-
-Power the Arduino and monitor the LCD display for real-time readings.
+## 🧰 How to Run
+1. Connect the sensors and pump to the Arduino as specified in the code.  
+2. Upload `SmartPlantMonitor.ino` to your Arduino using the Arduino IDE.  
+3. Power the Arduino via USB or external 9V supply.  
+4. Observe sensor readings on the LCD and watch the pump activate automatically when the soil is dry. 
